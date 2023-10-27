@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire de saisie de données</title>
+  
+    <!-- Inclusion de la police "Open Sans" depuis Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- Spécifications de style pour la police "Open Sans" -->
+    <style>
+        /* Définition de la police "Open Sans" pour le formulaire */
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+    </style> <!-- Fermez la balise style ici -->
+</head>
+<body>
+    <h1>Vos informations</h1>
+    <form method="POST" action="/calculate">
+        <!-- Champ ID -->
+        <label for="id">ID :</label>
+        <input type="text" name="id" id="id" required><br>
+
+        <!-- Champ Pourcentage avec liste déroulante -->
+        <label for="pourcentage">Pourcentage :</label>
+        <select name="pourcentage" id="pourcentage" required>
+            <option value="100">100%</option>
+            <option value="90">90%</option>
+            <option value="80">80%</option>
+            <option value="70">70%</option>
+            <option value="60">60%</option>
+            <option value="50">50%</option>
+            <option value="40">40%</option>
+            <option value="30">30%</option>
+            <option value="20">20%</option>
+            <option value="10">10%</option>
+        </select><br>
+
+        <!-- Champ Nombre de jours en télétravail -->
+        <label for="jours_teletravail">Nombre de jours en télétravail :</label>
+        <input type="number" name="jours_teletravail" id="jours_teletravail" required><br>
+
+        <!-- Champ Rue -->
+        <label for="rue">Rue :</label>
+        <input type="text" name="rue" id="rue" required><br>
+      
+        <!-- Champ Numéro -->
+        <label for="numéro">Numéro :</label>
+        <input type="text" name="numéro" id="numéro" required><br>
+
+        <!-- Champ Code postal -->
+        <label for="code_postal">Code postal :</label>
+        <input type="text" name="code_postal" id="code_postal" required><br>
+
+        <!-- Champ Ville -->
+        <label for="ville">Ville :</label>
+        <input type="text" name="ville" id="ville" required><br>
+      
+<!-- Champ Véhicule principal avec liste déroulante -->
+<label for="vehicule_principal">Véhicule principal :</label>
+<select name="vehicule_principal" id="vehicule_principal" required>
+    <option value="Voiture à essence">Voiture à essence</option>
+    <option value="Voiture au diesel">Voiture au diesel</option>
+    <option value="Voiture électrique">Voiture électrique</option>
+    <option value="Pieds">Pieds</option>
+    <option value="Transports publics">Transports publics</option>
+    <option value="Vélo">Vélo</option>
+    <option value="VAE 25 km/h">VAE 25 km/h</option>
+    <option value="Speedelec 45 km/h">Speedelec 45 km/h</option>
+    <option value="Motocycle thermique">Motocycle thermique</option>
+    <option value="Motocycle électrique">Motocycle électrique</option>
+</select><br>
+
+        <input type="submit" value="Calculer">
+    </form>
+</body>
+</html>
